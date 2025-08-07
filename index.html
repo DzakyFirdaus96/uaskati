@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Figuran</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f4f4f4; }
+    header, footer { background-color: #89a8db; color: white; padding: 20px; text-align: center; }
+    nav { background-color: #f9da8b; padding: 10px; text-align: center; }
+    nav a { margin: 0 15px; text-decoration: none; color: black; font-weight: bold; }
+    marquee { background-color: #ffe066; padding: 10px; font-weight: bold; }
+    .container { display: flex; }
+    .left, .right { background-color: #8dd76c; width: 20%; padding: 20px; }
+    .content { flex: 1; background-color: #bcdffb; padding: 20px; }
+    .product { border: 1px solid #ccc; background: white; padding: 10px; margin-bottom: 20px; }
+    .product img { width: 100%; max-height: 200px; object-fit: cover; }
+    .product button { background: #007bff; color: white; border: none; padding: 10px; margin-top: 10px; cursor: pointer; }
+    .product button:hover { background: #0056b3; }
+    form input, form select, form textarea, form button { display: block; width: 100%; padding: 10px; margin: 10px 0; }
+    .invoice { background: white; padding: 20px; max-width: 600px; margin: auto; }
+    .invoice h2 { border-bottom: 1px solid #ccc; padding-bottom: 10px; }
+    .bio img { max-width: 150px; border-radius: 10px; }
+  </style>
+  <script>
+    function goToInvoice() {
+      alert("Pesanan Anda telah dibuat! Menuju halaman struk...");
+      window.location.href = "invoice.html";
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Selamat Datang di Toko Figuran</h1>
+  </header>
+
+  <marquee>Diskon spesial minggu ini!</marquee>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="produk.html">Produk</a>
+    <a href="transaksi.html">Transaksi</a>
+    <a href="kontak.html">Kontak</a>
+    <a href="tentang.html">Tentang Kami</a>
+  </nav>
+
+  <div class="container">
+    <div class="left">
+      <h3>Kategori</h3>
+      <ul>
+        <li>Anime</li>
+        <li>Komik</li>
+        <li>Game</li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h2>Produk</h2>
+      <div class="product">
+        <img src="https://images-cdn.ubuy.co.id/633be60cf850c82ae8432102-good-smile-hatsune-miku-nendoroid-2-0.jpg" alt="Miku">
+        <p>Miku - Rp150.000</p>
+        <button onclick="location.href='transaksi.html'">Beli</button>
+      </div>
+      <div class="product">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTkzUXxKuCxprzAWGWfi-FNwaVHeGKIEYxC-fscuXOrgA0L1LkNO5TV0rJX2JWpv9YqwainC42GNGct9igZe986yfU12dftWzFRgd0p5MLFEg_mTFiv9yCo6g" alt="Kaws Gone">
+        <p>Kaws Gone - Rp250.000</p>
+        <button onclick="location.href='transaksi.html'">Beli</button>
+      </div>
+      <div class="product">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRFrJWgrKsaD1r1O82SwJwyuhmUwZ7S0pJOuX_NWYQJs5j9eX_AcmdssHEPRQZ81OR2mybGQ_FdngSyU5iGP9kG84ZrDEFIJ8vRSu6gANftgOw9d81D1hMU_g" alt="Kaws the promised">
+        <p>Kaws the Promised  - Rp200.000</p>
+        <button onclick="location.href='transaksi.html'">Beli</button>
+      </div>
+    </div>
+
+    <div class="right">
+      <h3>Info</h3>
+      <p>Pengiriman cepat ke seluruh Indonesia!</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Toko Figuran. All rights reserved.</p>
+  </footer>
+</body>
+</html>
